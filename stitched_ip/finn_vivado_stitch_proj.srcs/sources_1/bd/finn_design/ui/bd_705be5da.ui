@@ -1,0 +1,70 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.994992",
+   "Default View_TopLeft":"4443,-234",
+   "ExpandedHierarchyInLayout":"/MVAU_hls_0",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port s_axis_0 -pg 1 -lvl 0 -x -20 -y 70 -defaultsOSRD
+preplace port m_axis_0 -pg 1 -lvl 22 -x 6130 -y 120 -defaultsOSRD
+preplace port port-id_ap_clk -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
+preplace port port-id_ap_rst_n -pg 1 -lvl 0 -x -20 -y 130 -defaultsOSRD
+preplace inst StreamingFIFO_rtl_0 -pg 1 -lvl 1 -x 150 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst Thresholding_rtl_0 -pg 1 -lvl 2 -x 440 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir in1_V left -pinY in1_V 40L -pinDir out0_V right -pinY out0_V 20R -pinDir s_axilite left -pinY s_axilite 60L -pinDir ap_clk left -pinY ap_clk 80L -pinDir ap_rst_n left -pinY ap_rst_n 100L
+preplace inst StreamingFIFO_rtl_1 -pg 1 -lvl 3 -x 730 -y 50 -swap {0 1 2 3 4 5 6 7 9 8 10 11} -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 60L -pinDir ap_rst_n left -pinY ap_rst_n 40L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst FMPadding_rtl_0 -pg 1 -lvl 4 -x 1000 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir s_axilite left -pinY s_axilite 40L -pinDir ap_clk left -pinY ap_clk 60L -pinDir ap_rst_n left -pinY ap_rst_n 80L
+preplace inst StreamingFIFO_rtl_2 -pg 1 -lvl 5 -x 1270 -y 50 -swap {0 1 2 3 4 5 6 7 9 8 10 11} -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 60L -pinDir ap_rst_n left -pinY ap_rst_n 40L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst ConvolutionInputGenerator_rtl_0 -pg 1 -lvl 6 -x 1540 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L
+preplace inst StreamingFIFO_rtl_3 -pg 1 -lvl 7 -x 1810 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst MVAU_hls_0 -pg 1 -lvl 8 -x 2160 -y 50 -defaultsOSRD -pinDir out0_V right -pinY out0_V 50R -pinDir in0_V left -pinY in0_V 50L -pinDir in0_V.in0_V_tdata left -pinY in0_V.in0_V_tdata 70L -pinDir in0_V.in0_V_tready left -pinY in0_V.in0_V_tready 90L -pinDir in0_V.in0_V_tvalid left -pinY in0_V.in0_V_tvalid 110L -pinDir ap_clk left -pinY ap_clk 150L -pinDir ap_rst_n left -pinY ap_rst_n 190L
+preplace inst StreamingFIFO_rtl_4 -pg 1 -lvl 9 -x 2920 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst ConvolutionInputGenerator_rtl_1 -pg 1 -lvl 10 -x 3190 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L
+preplace inst StreamingFIFO_rtl_5 -pg 1 -lvl 11 -x 3460 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst MVAU_hls_1 -pg 1 -lvl 12 -x 3710 -y 50 -defaultsOSRD -pinDir out0_V right -pinY out0_V 20R -pinDir in0_V left -pinY in0_V 20L -pinDir ap_clk left -pinY ap_clk 50L -pinDir ap_rst_n left -pinY ap_rst_n 70L
+preplace inst StreamingFIFO_rtl_6 -pg 1 -lvl 13 -x 3960 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst ConvolutionInputGenerator_rtl_2 -pg 1 -lvl 14 -x 4230 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L
+preplace inst StreamingFIFO_rtl_7 -pg 1 -lvl 15 -x 4500 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst MVAU_hls_2 -pg 1 -lvl 16 -x 4750 -y 50 -defaultsOSRD -pinDir out0_V right -pinY out0_V 20R -pinDir in0_V left -pinY in0_V 20L -pinDir ap_clk left -pinY ap_clk 50L -pinDir ap_rst_n left -pinY ap_rst_n 70L
+preplace inst StreamingFIFO_rtl_8 -pg 1 -lvl 17 -x 5000 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst MVAU_hls_3 -pg 1 -lvl 18 -x 5250 -y 50 -defaultsOSRD -pinDir out0_V right -pinY out0_V 20R -pinDir in0_V left -pinY in0_V 20L -pinDir ap_clk left -pinY ap_clk 50L -pinDir ap_rst_n left -pinY ap_rst_n 70L
+preplace inst StreamingFIFO_rtl_9 -pg 1 -lvl 19 -x 5500 -y 50 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 40L -pinDir ap_rst_n left -pinY ap_rst_n 60L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst MVAU_rtl_0 -pg 1 -lvl 20 -x 5750 -y 50 -defaultsOSRD -pinDir out0_V right -pinY out0_V 70R -pinDir in0_V left -pinY in0_V 20L -pinDir ap_clk left -pinY ap_clk 50L -pinDir ap_rst_n left -pinY ap_rst_n 70L
+preplace inst StreamingFIFO_rtl_10 -pg 1 -lvl 21 -x 5980 -y 100 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 70L -pinDir ap_rst_n left -pinY ap_rst_n 90L -pinBusDir count right -pinBusY count 40R -pinBusDir maxcount right -pinBusY maxcount 60R
+preplace inst MVAU_hls_0|MVAU_hls_0 -pg 1 -lvl 2 -x 2510 -y 80 -defaultsOSRD -pinDir in0_V left -pinY in0_V 20L -pinDir in1_V left -pinY in1_V 80L -pinDir out0_V right -pinY out0_V 20R -pinDir ap_clk left -pinY ap_clk 220L -pinDir ap_rst_n left -pinY ap_rst_n 240L
+preplace inst MVAU_hls_0|MVAU_hls_0_wstrm -pg 1 -lvl 1 -x 2250 -y 140 -defaultsOSRD -pinDir m_axis_0 right -pinY m_axis_0 20R -pinDir s_axis_0 left -pinY s_axis_0 20L -pinDir s_axilite left -pinY s_axilite 40L -pinDir ap_clk left -pinY ap_clk 60L -pinDir ap_clk2x left -pinY ap_clk2x 80L -pinDir ap_rst_n left -pinY ap_rst_n 100L
+preplace netloc ap_clk_0_1 1 0 21 0 170 320 210 600 170 880 190 1120 170 1400 170 1660 170 1960 400 2770 170 3050 170 3310 170 3590 170 3810 170 4090 170 4350 170 4630 170 4850 170 5130 170 5350 170 5630 170 NJ
+preplace netloc ap_rst_n_0_1 1 0 21 20 190 300 10 580 190 860 10 1140 190 1420 190 1680 190 1940 420 2790 190 3070 190 3330 190 3610 190 3830 190 4110 190 4370 190 4650 190 4870 190 5150 190 5370 190 5650 190 NJ
+preplace netloc ConvolutionInputGenerator_rtl_0_out0_V 1 6 1 N 70
+preplace netloc ConvolutionInputGenerator_rtl_1_out0_V 1 10 1 N 70
+preplace netloc ConvolutionInputGenerator_rtl_2_out0_V 1 14 1 N 70
+preplace netloc FMPadding_rtl_0_out0_V 1 4 1 N 70
+preplace netloc MVAU_hls_0_out0_V 1 8 1 2750 70n
+preplace netloc MVAU_hls_1_out0_V 1 12 1 N 70
+preplace netloc MVAU_hls_2_out0_V 1 16 1 N 70
+preplace netloc MVAU_hls_3_out0_V 1 18 1 N 70
+preplace netloc MVAU_rtl_0_out0_V 1 20 1 N 120
+preplace netloc StreamingFIFO_rtl_0_out0_V 1 1 1 N 70
+preplace netloc StreamingFIFO_rtl_10_out0_V 1 21 1 N 120
+preplace netloc StreamingFIFO_rtl_1_out0_V 1 3 1 N 70
+preplace netloc StreamingFIFO_rtl_2_out0_V 1 5 1 N 70
+preplace netloc StreamingFIFO_rtl_3_out0_V 1 7 1 1960 70n
+preplace netloc StreamingFIFO_rtl_4_out0_V 1 9 1 N 70
+preplace netloc StreamingFIFO_rtl_5_out0_V 1 11 1 N 70
+preplace netloc StreamingFIFO_rtl_6_out0_V 1 13 1 N 70
+preplace netloc StreamingFIFO_rtl_7_out0_V 1 15 1 N 70
+preplace netloc StreamingFIFO_rtl_8_out0_V 1 17 1 N 70
+preplace netloc StreamingFIFO_rtl_9_out0_V 1 19 1 N 70
+preplace netloc Thresholding_rtl_0_out0_V 1 2 1 N 70
+preplace netloc in0_V_0_1 1 0 1 NJ 70
+preplace netloc MVAU_hls_0|ap_clk_1 1 0 2 2120 300 N
+preplace netloc MVAU_hls_0|ap_rst_n_1 1 0 2 2100 320 N
+preplace netloc MVAU_hls_0|MVAU_hls_0_out0_V 1 2 1 N 100
+preplace netloc MVAU_hls_0|MVAU_hls_0_wstrm_m_axis_0 1 1 1 N 160
+preplace netloc MVAU_hls_0|in0_V_1 1 0 2 NJ 100 N
+levelinfo -pg 1 -20 150 440 730 1000 1270 1540 1810 2160 2920 3190 3460 3710 3960 4230 4500 4750 5000 5250 5500 5750 5980 6130
+levelinfo -hier MVAU_hls_0 * 2250 2510 *
+pagesize -pg 1 -db -bbox -sgen -130 0 6240 430
+pagesize -hier MVAU_hls_0 -db -bbox -sgen 2070 40 2670 380
+"
+}
+

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun  4 20:53:19 2026
+# Process ID         : 113690
+# Current directory  : /home/kirthanar/brainsmith_projects/lenet/build/vivado_stitch_proj_ne6oa2sk
+# Command line       : vivado -mode batch -source make_project.tcl
+# Log file           : /home/kirthanar/brainsmith_projects/lenet/build/vivado_stitch_proj_ne6oa2sk/vivado.log
+# Journal file       : /home/kirthanar/brainsmith_projects/lenet/build/vivado_stitch_proj_ne6oa2sk/vivado.jou
+# Running On         : KirthanaR
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor
+# CPU Frequency      : 3592.245 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 67339 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 75929 MB
+# Available Virtual  : 70279 MB
+#-----------------------------------------------------------
+source make_project.tcl

@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun 17 11:03:00 2026
+# Process ID         : 514929
+# Current directory  : /home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip
+# Command line       : vivado finn_vivado_stitch_proj.xpr
+# Log file           : /home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/vivado.log
+# Journal file       : /home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/vivado.jou
+# Running On         : KirthanaR
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor
+# CPU Frequency      : 3592.603 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 67339 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 75929 MB
+# Available Virtual  : 67411 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+start_gui
+open_project finn_vivado_stitch_proj.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_Thresholding_rtl_0_3pqhh40p'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_0_g_q7iax7/project_MVAU_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_1_h5t4yekw/project_MVAU_hls_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_2_3qegdk2h/project_MVAU_hls_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_3_b9xuyaww/project_MVAU_hls_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_rtl_0_4fpc3udr'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 8037.781 ; gain = 447.188 ; free physical = 35310 ; free virtual = 63209
+update_compile_order -fileset sources_1
+open_bd_design {/home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd}
+Reading block design file </home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd>...
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_0:1.0 - StreamingFIFO_rtl_0
+Adding component instance block -- xilinx.com:module_ref:Thresholding_rtl_0:1.0 - Thresholding_rtl_0
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_1:1.0 - StreamingFIFO_rtl_1
+Adding component instance block -- xilinx.com:module_ref:FMPadding_rtl_0:1.0 - FMPadding_rtl_0
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_2:1.0 - StreamingFIFO_rtl_2
+Adding component instance block -- xilinx.com:module_ref:ConvolutionInputGenerator_rtl_0:1.0 - ConvolutionInputGenerator_rtl_0
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_3:1.0 - StreamingFIFO_rtl_3
+Adding component instance block -- xilinx.com:hls:MVAU_hls_0:1.0 - MVAU_hls_0
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_0_memstream_wrapper:1.0 - MVAU_hls_0_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_4:1.0 - StreamingFIFO_rtl_4
+Adding component instance block -- xilinx.com:module_ref:ConvolutionInputGenerator_rtl_1:1.0 - ConvolutionInputGenerator_rtl_1
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_5:1.0 - StreamingFIFO_rtl_5
+Adding component instance block -- xilinx.com:hls:MVAU_hls_1:1.0 - MVAU_hls_1
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_1_memstream_wrapper:1.0 - MVAU_hls_1_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_6:1.0 - StreamingFIFO_rtl_6
+Adding component instance block -- xilinx.com:module_ref:ConvolutionInputGenerator_rtl_2:1.0 - ConvolutionInputGenerator_rtl_2
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_7:1.0 - StreamingFIFO_rtl_7
+Adding component instance block -- xilinx.com:hls:MVAU_hls_2:1.0 - MVAU_hls_2
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_2_memstream_wrapper:1.0 - MVAU_hls_2_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_8:1.0 - StreamingFIFO_rtl_8
+Adding component instance block -- xilinx.com:hls:MVAU_hls_3:1.0 - MVAU_hls_3
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_3_memstream_wrapper:1.0 - MVAU_hls_3_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_9:1.0 - StreamingFIFO_rtl_9
+Adding component instance block -- xilinx.com:module_ref:MVAU_rtl_0:1.0 - MVAU_rtl_0
+Adding component instance block -- xilinx.com:module_ref:MVAU_rtl_0_memstream_wrapper:1.0 - MVAU_rtl_0_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_10:1.0 - StreamingFIFO_rtl_10
+Successfully read diagram <finn_design> from block design file </home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 17 11:37:34 2026...

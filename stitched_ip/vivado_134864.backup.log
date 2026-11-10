@@ -1,0 +1,157 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jun  5 08:28:22 2026
+# Process ID         : 134864
+# Current directory  : /home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip
+# Command line       : vivado finn_vivado_stitch_proj.xpr
+# Log file           : /home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/vivado.log
+# Journal file       : /home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/vivado.jou
+# Running On         : KirthanaR
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor
+# CPU Frequency      : 3355.574 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 67339 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 75929 MB
+# Available Virtual  : 70561 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+start_gui
+open_project finn_vivado_stitch_proj.xpr
+INFO: [Project 1-313] Project file moved from '/home/kirthanar/brainsmith_projects/lenet/build/vivado_stitch_proj_ne6oa2sk' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/memstream'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/memstream' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_Thresholding_rtl_0_3pqhh40p'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_Thresholding_rtl_0_3pqhh40p' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_MVAU_hls_0_g_q7iax7/project_MVAU_hls_0/sol1/impl/ip'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_0_g_q7iax7/project_MVAU_hls_0/sol1/impl/ip' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_MVAU_hls_1_h5t4yekw/project_MVAU_hls_1/sol1/impl/ip'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_1_h5t4yekw/project_MVAU_hls_1/sol1/impl/ip' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_MVAU_hls_2_3qegdk2h/project_MVAU_hls_2/sol1/impl/ip'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_2_3qegdk2h/project_MVAU_hls_2/sol1/impl/ip' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_MVAU_hls_3_b9xuyaww/project_MVAU_hls_3/sol1/impl/ip'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_3_b9xuyaww/project_MVAU_hls_3/sol1/impl/ip' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_MVAU_rtl_0_4fpc3udr'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_rtl_0_4fpc3udr' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0/StreamingFIFO_rtl_0.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0/StreamingFIFO_rtl_0.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6/StreamingFIFO_rtl_1.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6/StreamingFIFO_rtl_1.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/fmpadding_axi.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/fmpadding_axi.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/fmpadding.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/fmpadding.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/axi2we.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/axi2we.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/FMPadding_rtl_0.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub/FMPadding_rtl_0.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns/StreamingFIFO_rtl_2.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns/StreamingFIFO_rtl_2.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/swg_pkg.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/swg_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/ConvolutionInputGenerator_rtl_0_wrapper.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/ConvolutionInputGenerator_rtl_0_wrapper.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/ConvolutionInputGenerator_rtl_0_impl.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/ConvolutionInputGenerator_rtl_0_impl.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/swg_common.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek/swg_common.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640/StreamingFIFO_rtl_3.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640/StreamingFIFO_rtl_3.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3/StreamingFIFO_rtl_4.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3/StreamingFIFO_rtl_4.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/swg_pkg.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/swg_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/ConvolutionInputGenerator_rtl_1_wrapper.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/ConvolutionInputGenerator_rtl_1_wrapper.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/ConvolutionInputGenerator_rtl_1_impl.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/ConvolutionInputGenerator_rtl_1_impl.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/swg_common.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_/swg_common.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa/StreamingFIFO_rtl_5.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa/StreamingFIFO_rtl_5.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4/StreamingFIFO_rtl_6.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4/StreamingFIFO_rtl_6.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/swg_pkg.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/swg_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/ConvolutionInputGenerator_rtl_2_wrapper.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/ConvolutionInputGenerator_rtl_2_wrapper.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/ConvolutionInputGenerator_rtl_2_impl.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/ConvolutionInputGenerator_rtl_2_impl.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/swg_common.sv'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef/swg_common.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv/StreamingFIFO_rtl_7.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv/StreamingFIFO_rtl_7.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97/StreamingFIFO_rtl_8.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97/StreamingFIFO_rtl_8.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y/StreamingFIFO_rtl_9.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y/StreamingFIFO_rtl_9.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_MVAU_rtl_0_4fpc3udr/MVAU_rtl_0_wrapper.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_rtl_0_4fpc3udr/MVAU_rtl_0_wrapper.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/mvu/mvu_pkg.sv'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/mvu/mvu_pkg.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/mvu/mvu_vvu_axi.sv'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/mvu/mvu_vvu_axi.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/mvu/replay_buffer.sv'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/mvu/replay_buffer.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/mvu/mvu.sv'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/mvu/mvu.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/brainsmith/deps/finn/finn-rtllib/mvu/add_multi.sv'; using path '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/mvu/add_multi.sv' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck/Q_srl.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck/Q_srl.v' instead.
+WARNING: [Project 1-312] File not found as '/home/kirthanar/brainsmith_projects/lenet/results_run11/root/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck/StreamingFIFO_rtl_10.v'; using path '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck/StreamingFIFO_rtl_10.v' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith/deps/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_0_mib7ogy0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_Thresholding_rtl_0_3pqhh40p'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_1_2wwgy7c6'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_FMPadding_rtl_0_04a6i_ub'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_2_cddetjns'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_hyyv2mek'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_3_afy4_640'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_0_g_q7iax7/project_MVAU_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_4_k4g2zor3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_5z3eest_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_5_ailuzqfa'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_1_h5t4yekw/project_MVAU_hls_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_6_ylzrdyn4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_66q7q1ef'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_7_1aonsugv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_2_3qegdk2h/project_MVAU_hls_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_8_s765jc97'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_hls_3_b9xuyaww/project_MVAU_hls_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_9_f10bvv0y'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_MVAU_rtl_0_4fpc3udr'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kirthanar/brainsmith_projects/lenet/build/code_gen_ipgen_StreamingFIFO_rtl_10_8yubflck'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd}
+Reading block design file </home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd>...
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_0:1.0 - StreamingFIFO_rtl_0
+Adding component instance block -- xilinx.com:module_ref:Thresholding_rtl_0:1.0 - Thresholding_rtl_0
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_1:1.0 - StreamingFIFO_rtl_1
+Adding component instance block -- xilinx.com:module_ref:FMPadding_rtl_0:1.0 - FMPadding_rtl_0
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_2:1.0 - StreamingFIFO_rtl_2
+Adding component instance block -- xilinx.com:module_ref:ConvolutionInputGenerator_rtl_0:1.0 - ConvolutionInputGenerator_rtl_0
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_3:1.0 - StreamingFIFO_rtl_3
+Adding component instance block -- xilinx.com:hls:MVAU_hls_0:1.0 - MVAU_hls_0
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_0_memstream_wrapper:1.0 - MVAU_hls_0_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_4:1.0 - StreamingFIFO_rtl_4
+Adding component instance block -- xilinx.com:module_ref:ConvolutionInputGenerator_rtl_1:1.0 - ConvolutionInputGenerator_rtl_1
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_5:1.0 - StreamingFIFO_rtl_5
+Adding component instance block -- xilinx.com:hls:MVAU_hls_1:1.0 - MVAU_hls_1
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_1_memstream_wrapper:1.0 - MVAU_hls_1_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_6:1.0 - StreamingFIFO_rtl_6
+Adding component instance block -- xilinx.com:module_ref:ConvolutionInputGenerator_rtl_2:1.0 - ConvolutionInputGenerator_rtl_2
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_7:1.0 - StreamingFIFO_rtl_7
+Adding component instance block -- xilinx.com:hls:MVAU_hls_2:1.0 - MVAU_hls_2
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_2_memstream_wrapper:1.0 - MVAU_hls_2_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_8:1.0 - StreamingFIFO_rtl_8
+Adding component instance block -- xilinx.com:hls:MVAU_hls_3:1.0 - MVAU_hls_3
+Adding component instance block -- xilinx.com:module_ref:MVAU_hls_3_memstream_wrapper:1.0 - MVAU_hls_3_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_9:1.0 - StreamingFIFO_rtl_9
+Adding component instance block -- xilinx.com:module_ref:MVAU_rtl_0:1.0 - MVAU_rtl_0
+Adding component instance block -- xilinx.com:module_ref:MVAU_rtl_0_memstream_wrapper:1.0 - MVAU_rtl_0_wstrm
+Adding component instance block -- xilinx.com:module_ref:StreamingFIFO_rtl_10:1.0 - StreamingFIFO_rtl_10
+Successfully read diagram <finn_design> from block design file </home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd>
+set_property location {2 388 228} [get_bd_cells Thresholding_rtl_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {2 388 228} [get_bd_cells Thresholding_rtl_0]'
+close_bd_design [get_bd_designs finn_design]
+Wrote  : </home/kirthanar/brainsmith_projects/lenet/results_run11/root/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/ui/bd_705be5da.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 08:34:45 2026...
