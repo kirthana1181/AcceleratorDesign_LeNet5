@@ -1,0 +1,715 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-05-28T14:20:17.155409",
+  "kernels": {
+    "brainsmith:AddStreams": {
+      "module": "brainsmith.kernels.addstreams.addstreams",
+      "attr": "AddStreams",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/addstreams/addstreams.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:AddStreamsHLS"
+      ],
+      "is_infrastructure": false
+    },
+    "brainsmith:ChannelwiseOp": {
+      "module": "brainsmith.kernels.channelwise.channelwise",
+      "attr": "ChannelwiseOp",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/channelwise/channelwise.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:ChannelwiseOpHLS"
+      ],
+      "is_infrastructure": false
+    },
+    "brainsmith:Crop": {
+      "module": "brainsmith.kernels.crop.crop",
+      "attr": "Crop",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/crop/crop.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:Crop_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "brainsmith:DuplicateStreams": {
+      "module": "brainsmith.kernels.duplicate_streams.duplicate_streams",
+      "attr": "DuplicateStreams",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/duplicate_streams/duplicate_streams.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:DuplicateStreams_hls"
+      ],
+      "is_infrastructure": true
+    },
+    "brainsmith:ElementwiseBinaryOp": {
+      "module": "brainsmith.kernels.elementwise_binary.elementwise_binary",
+      "attr": "ElementwiseBinaryOp",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/elementwise_binary/elementwise_binary.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:ElementwiseBinaryOp_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "brainsmith:LayerNorm": {
+      "module": "brainsmith.kernels.layernorm.layernorm",
+      "attr": "LayerNorm",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/layernorm/layernorm.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:LayerNorm_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "brainsmith:Softmax": {
+      "module": "brainsmith.kernels.softmax.softmax",
+      "attr": "Softmax",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/softmax/softmax.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:Softmax_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "brainsmith:Thresholding": {
+      "module": "brainsmith.kernels.thresholding.thresholding",
+      "attr": "Thresholding",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/thresholding/thresholding.py",
+      "infer": null,
+      "backends": [
+        "brainsmith:ThresholdingHLS",
+        "brainsmith:ThresholdingRTL"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:AddStreams": {
+      "module": "finn.custom_op.fpgadataflow.addstreams",
+      "attr": "AddStreams",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/addstreams.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferAddStreamsLayer"
+      },
+      "backends": [
+        "finn:AddStreams_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:ChannelwiseOp": {
+      "module": "finn.custom_op.fpgadataflow.channelwise_op",
+      "attr": "ChannelwiseOp",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/channelwise_op.py",
+      "infer": null,
+      "backends": [
+        "finn:ChannelwiseOp_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:ConvolutionInputGenerator": {
+      "module": "finn.custom_op.fpgadataflow.convolutioninputgenerator",
+      "attr": "ConvolutionInputGenerator",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/convolutioninputgenerator.py",
+      "infer": null,
+      "backends": [
+        "finn:ConvolutionInputGenerator_rtl"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:DuplicateStreams": {
+      "module": "finn.custom_op.fpgadataflow.duplicatestreams",
+      "attr": "DuplicateStreams",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/duplicatestreams.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferDuplicateStreamsLayer"
+      },
+      "backends": [
+        "finn:DuplicateStreams_hls"
+      ],
+      "is_infrastructure": true
+    },
+    "finn:GlobalAccPool": {
+      "module": "finn.custom_op.fpgadataflow.globalaccpool",
+      "attr": "GlobalAccPool",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/globalaccpool.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferGlobalAccPoolLayer"
+      },
+      "backends": [
+        "finn:GlobalAccPool_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:InnerShuffle": {
+      "module": "finn.custom_op.fpgadataflow.inner_shuffle",
+      "attr": "InnerShuffle",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/inner_shuffle.py",
+      "infer": null,
+      "backends": [
+        "finn:InnerShuffle_rtl"
+      ],
+      "is_infrastructure": true
+    },
+    "finn:LabelSelect": {
+      "module": "finn.custom_op.fpgadataflow.labelselect",
+      "attr": "LabelSelect",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/labelselect.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferLabelSelectLayer"
+      },
+      "backends": [
+        "finn:LabelSelect_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:Lookup": {
+      "module": "finn.custom_op.fpgadataflow.lookup",
+      "attr": "Lookup",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/lookup.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferLookupLayer"
+      },
+      "backends": [
+        "finn:Lookup_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:MVAU": {
+      "module": "finn.custom_op.fpgadataflow.matrixvectoractivation",
+      "attr": "MVAU",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferQuantizedMatrixVectorActivation"
+      },
+      "backends": [
+        "finn:MVAU_hls",
+        "finn:MVAU_rtl"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:OuterShuffle": {
+      "module": "finn.custom_op.fpgadataflow.outer_shuffle",
+      "attr": "OuterShuffle",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/outer_shuffle.py",
+      "infer": null,
+      "backends": [
+        "finn:OuterShuffle_hls"
+      ],
+      "is_infrastructure": true
+    },
+    "finn:Pool": {
+      "module": "finn.custom_op.fpgadataflow.pool",
+      "attr": "Pool",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/pool.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferPool"
+      },
+      "backends": [
+        "finn:Pool_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:Shuffle": {
+      "module": "finn.custom_op.fpgadataflow.shuffle",
+      "attr": "Shuffle",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/shuffle.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferShuffle"
+      },
+      "backends": [],
+      "is_infrastructure": false
+    },
+    "finn:StreamingConcat": {
+      "module": "finn.custom_op.fpgadataflow.concat",
+      "attr": "StreamingConcat",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/concat.py",
+      "infer": null,
+      "backends": [
+        "finn:StreamingConcat_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:StreamingDataWidthConverter": {
+      "module": "finn.custom_op.fpgadataflow.streamingdatawidthconverter",
+      "attr": "StreamingDataWidthConverter",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/streamingdatawidthconverter.py",
+      "infer": null,
+      "backends": [
+        "finn:StreamingDataWidthConverter_hls",
+        "finn:StreamingDataWidthConverter_rtl"
+      ],
+      "is_infrastructure": true
+    },
+    "finn:StreamingEltwise": {
+      "module": "finn.custom_op.fpgadataflow.streamingeltwise",
+      "attr": "StreamingEltwise",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/streamingeltwise.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferStreamingEltwise"
+      },
+      "backends": [
+        "finn:StreamingEltwise_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:StreamingFIFO": {
+      "module": "finn.custom_op.fpgadataflow.streamingfifo",
+      "attr": "StreamingFIFO",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/streamingfifo.py",
+      "infer": null,
+      "backends": [
+        "finn:StreamingFIFO_rtl"
+      ],
+      "is_infrastructure": true
+    },
+    "finn:StreamingSplit": {
+      "module": "finn.custom_op.fpgadataflow.split",
+      "attr": "StreamingSplit",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/split.py",
+      "infer": null,
+      "backends": [
+        "finn:StreamingSplit_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:Thresholding": {
+      "module": "finn.custom_op.fpgadataflow.thresholding",
+      "attr": "Thresholding",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/thresholding.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferThresholdingLayer"
+      },
+      "backends": [
+        "finn:Thresholding_hls",
+        "finn:Thresholding_rtl"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:UpsampleNearestNeighbour": {
+      "module": "finn.custom_op.fpgadataflow.upsampler",
+      "attr": "UpsampleNearestNeighbour",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/upsampler.py",
+      "infer": null,
+      "backends": [
+        "finn:UpsampleNearestNeighbour_hls"
+      ],
+      "is_infrastructure": false
+    },
+    "finn:VVAU": {
+      "module": "finn.custom_op.fpgadataflow.vectorvectoractivation",
+      "attr": "VVAU",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/vectorvectoractivation.py",
+      "infer": {
+        "module": "finn.transformation.fpgadataflow.convert_to_hw_layers",
+        "class_name": "InferVectorVectorActivation"
+      },
+      "backends": [
+        "finn:VVAU_hls",
+        "finn:VVAU_rtl"
+      ],
+      "is_infrastructure": false
+    }
+  },
+  "backends": {
+    "brainsmith:AddStreamsHLS": {
+      "module": "brainsmith.kernels.addstreams.addstreams_hls",
+      "attr": "AddStreams_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/addstreams/addstreams_hls.py",
+      "target": "brainsmith:AddStreams",
+      "language": "hls"
+    },
+    "brainsmith:ChannelwiseOpHLS": {
+      "module": "brainsmith.kernels.channelwise.channelwise_hls",
+      "attr": "ChannelwiseOp_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/channelwise/channelwise_hls.py",
+      "target": "brainsmith:ChannelwiseOp",
+      "language": "hls"
+    },
+    "brainsmith:Crop_hls": {
+      "module": "brainsmith.kernels.crop.crop_hls",
+      "attr": "Crop_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/crop/crop_hls.py",
+      "target": "brainsmith:Crop",
+      "language": "hls"
+    },
+    "brainsmith:DuplicateStreams_hls": {
+      "module": "brainsmith.kernels.duplicate_streams.duplicate_streams_hls",
+      "attr": "DuplicateStreams_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/duplicate_streams/duplicate_streams_hls.py",
+      "target": "brainsmith:DuplicateStreams",
+      "language": "hls"
+    },
+    "brainsmith:ElementwiseBinaryOp_hls": {
+      "module": "brainsmith.kernels.elementwise_binary.elementwise_binary_hls",
+      "attr": "ElementwiseBinaryOp_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/elementwise_binary/elementwise_binary_hls.py",
+      "target": "brainsmith:ElementwiseBinaryOp",
+      "language": "hls"
+    },
+    "brainsmith:LayerNorm_hls": {
+      "module": "brainsmith.kernels.layernorm.layernorm_hls",
+      "attr": "LayerNorm_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/layernorm/layernorm_hls.py",
+      "target": "brainsmith:LayerNorm",
+      "language": "hls"
+    },
+    "brainsmith:Softmax_hls": {
+      "module": "brainsmith.kernels.softmax.softmax_hls",
+      "attr": "Softmax_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/softmax/softmax_hls.py",
+      "target": "brainsmith:Softmax",
+      "language": "hls"
+    },
+    "brainsmith:ThresholdingHLS": {
+      "module": "brainsmith.kernels.thresholding.thresholding_hls",
+      "attr": "Thresholding_hls",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/thresholding/thresholding_hls.py",
+      "target": "brainsmith:Thresholding",
+      "language": "hls"
+    },
+    "brainsmith:ThresholdingRTL": {
+      "module": "brainsmith.kernels.thresholding.thresholding_rtl",
+      "attr": "Thresholding_rtl",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/kernels/thresholding/thresholding_rtl.py",
+      "target": "brainsmith:Thresholding",
+      "language": "rtl"
+    },
+    "finn:AddStreams_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.addstreams_hls",
+      "attr": "AddStreams_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/addstreams_hls.py",
+      "target": "finn:AddStreams",
+      "language": "hls"
+    },
+    "finn:ChannelwiseOp_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.channelwise_op_hls",
+      "attr": "ChannelwiseOp_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/channelwise_op_hls.py",
+      "target": "finn:ChannelwiseOp",
+      "language": "hls"
+    },
+    "finn:DuplicateStreams_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.duplicatestreams_hls",
+      "attr": "DuplicateStreams_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/duplicatestreams_hls.py",
+      "target": "finn:DuplicateStreams",
+      "language": "hls"
+    },
+    "finn:GlobalAccPool_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.globalaccpool_hls",
+      "attr": "GlobalAccPool_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/globalaccpool_hls.py",
+      "target": "finn:GlobalAccPool",
+      "language": "hls"
+    },
+    "finn:LabelSelect_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.labelselect_hls",
+      "attr": "LabelSelect_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/labelselect_hls.py",
+      "target": "finn:LabelSelect",
+      "language": "hls"
+    },
+    "finn:Lookup_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.lookup_hls",
+      "attr": "Lookup_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/lookup_hls.py",
+      "target": "finn:Lookup",
+      "language": "hls"
+    },
+    "finn:MVAU_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.matrixvectoractivation_hls",
+      "attr": "MVAU_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/matrixvectoractivation_hls.py",
+      "target": "finn:MVAU",
+      "language": "hls"
+    },
+    "finn:OuterShuffle_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.outer_shuffle_hls",
+      "attr": "OuterShuffle_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/outer_shuffle_hls.py",
+      "target": "finn:OuterShuffle",
+      "language": "hls"
+    },
+    "finn:Pool_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.pool_hls",
+      "attr": "Pool_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/pool_hls.py",
+      "target": "finn:Pool",
+      "language": "hls"
+    },
+    "finn:StreamingConcat_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.concat_hls",
+      "attr": "StreamingConcat_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/concat_hls.py",
+      "target": "finn:StreamingConcat",
+      "language": "hls"
+    },
+    "finn:StreamingDataWidthConverter_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.streamingdatawidthconverter_hls",
+      "attr": "StreamingDataWidthConverter_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/streamingdatawidthconverter_hls.py",
+      "target": "finn:StreamingDataWidthConverter",
+      "language": "hls"
+    },
+    "finn:StreamingEltwise_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.streamingeltwise_hls",
+      "attr": "StreamingEltwise_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/streamingeltwise_hls.py",
+      "target": "finn:StreamingEltwise",
+      "language": "hls"
+    },
+    "finn:StreamingSplit_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.split_hls",
+      "attr": "StreamingSplit_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/split_hls.py",
+      "target": "finn:StreamingSplit",
+      "language": "hls"
+    },
+    "finn:Thresholding_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.thresholding_hls",
+      "attr": "Thresholding_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/thresholding_hls.py",
+      "target": "finn:Thresholding",
+      "language": "hls"
+    },
+    "finn:UpsampleNearestNeighbour_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.upsampler_hls",
+      "attr": "UpsampleNearestNeighbour_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/upsampler_hls.py",
+      "target": "finn:UpsampleNearestNeighbour",
+      "language": "hls"
+    },
+    "finn:VVAU_hls": {
+      "module": "finn.custom_op.fpgadataflow.hls.vectorvectoractivation_hls",
+      "attr": "VVAU_hls",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/hls/vectorvectoractivation_hls.py",
+      "target": "finn:VVAU",
+      "language": "hls"
+    },
+    "finn:ConvolutionInputGenerator_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.convolutioninputgenerator_rtl",
+      "attr": "ConvolutionInputGenerator_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/convolutioninputgenerator_rtl.py",
+      "target": "finn:ConvolutionInputGenerator",
+      "language": "rtl"
+    },
+    "finn:InnerShuffle_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.inner_shuffle_rtl",
+      "attr": "InnerShuffle_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/inner_shuffle_rtl.py",
+      "target": "finn:InnerShuffle",
+      "language": "rtl"
+    },
+    "finn:MVAU_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.matrixvectoractivation_rtl",
+      "attr": "MVAU_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/matrixvectoractivation_rtl.py",
+      "target": "finn:MVAU",
+      "language": "rtl"
+    },
+    "finn:StreamingDataWidthConverter_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.streamingdatawidthconverter_rtl",
+      "attr": "StreamingDataWidthConverter_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/streamingdatawidthconverter_rtl.py",
+      "target": "finn:StreamingDataWidthConverter",
+      "language": "rtl"
+    },
+    "finn:StreamingFIFO_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.streamingfifo_rtl",
+      "attr": "StreamingFIFO_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/streamingfifo_rtl.py",
+      "target": "finn:StreamingFIFO",
+      "language": "rtl"
+    },
+    "finn:Thresholding_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.thresholding_rtl",
+      "attr": "Thresholding_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/thresholding_rtl.py",
+      "target": "finn:Thresholding",
+      "language": "rtl"
+    },
+    "finn:VVAU_rtl": {
+      "module": "finn.custom_op.fpgadataflow.rtl.vectorvectoractivation_rtl",
+      "attr": "VVAU_rtl",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/custom_op/fpgadataflow/rtl/vectorvectoractivation_rtl.py",
+      "target": "finn:VVAU",
+      "language": "rtl"
+    }
+  },
+  "steps": {
+    "brainsmith:bert_cleanup": {
+      "module": "brainsmith.steps.bert_custom_steps",
+      "attr": "bert_cleanup_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/bert_custom_steps.py"
+    },
+    "brainsmith:bert_streamlining": {
+      "module": "brainsmith.steps.bert_custom_steps",
+      "attr": "bert_streamlining_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/bert_custom_steps.py"
+    },
+    "brainsmith:shell_metadata_handover": {
+      "module": "brainsmith.steps.bert_custom_steps",
+      "attr": "shell_metadata_handover_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/bert_custom_steps.py"
+    },
+    "brainsmith:build_dataflow_graph": {
+      "module": "brainsmith.steps.build_dataflow_graph",
+      "attr": "build_dataflow_graph",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/build_dataflow_graph.py"
+    },
+    "brainsmith:build_hw_graph": {
+      "module": "brainsmith.steps.build_hw_graph",
+      "attr": "build_hw_graph",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/build_hw_graph.py"
+    },
+    "brainsmith:qonnx_to_finn": {
+      "module": "brainsmith.steps.core_steps",
+      "attr": "qonnx_to_finn_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/core_steps.py"
+    },
+    "brainsmith:specialize_layers": {
+      "module": "brainsmith.steps.core_steps",
+      "attr": "specialize_layers_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/core_steps.py"
+    },
+    "brainsmith:constrain_folding_and_set_pumped_compute": {
+      "module": "brainsmith.steps.core_steps",
+      "attr": "constrain_folding_and_set_pumped_compute_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/core_steps.py"
+    },
+    "brainsmith:normalize_dataflow_layouts": {
+      "module": "brainsmith.steps.normalize_layouts",
+      "attr": "normalize_dataflow_layouts_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/normalize_layouts.py"
+    },
+    "brainsmith:apply_parallelization_config": {
+      "module": "brainsmith.steps.parallelization",
+      "attr": "apply_parallelization_config_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/parallelization.py"
+    },
+    "brainsmith:target_fps_parallelization": {
+      "module": "brainsmith.steps.parallelization",
+      "attr": "target_fps_parallelization_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/parallelization.py"
+    },
+    "brainsmith:explore_kernel_params": {
+      "module": "brainsmith.steps.parameter_exploration",
+      "attr": "explore_kernel_params_step",
+      "file_path": "/home/kirthanar/brainsmith/brainsmith/steps/parameter_exploration.py"
+    },
+    "finn:apply_folding_config": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_apply_folding_config",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:convert_to_hw": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_convert_to_hw",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:create_dataflow_partition": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_create_dataflow_partition",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:create_stitched_ip": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_create_stitched_ip",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:deployment_package": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_deployment_package",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:generate_estimate_reports": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_generate_estimate_reports",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:hw_codegen": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_hw_codegen",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:hw_ipgen": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_hw_ipgen",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:loop_rolling": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_loop_rolling",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:make_driver": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_make_driver",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:measure_rtlsim_performance": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_measure_rtlsim_performance",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:minimize_bit_width": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_minimize_bit_width",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:out_of_context_synthesis": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_out_of_context_synthesis",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:qonnx_to_finn": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_qonnx_to_finn",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:set_fifo_depths": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_set_fifo_depths",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:specialize_layers": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_specialize_layers",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:streamline": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_streamline",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:synthesize_bitfile": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_synthesize_bitfile",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:target_fps_parallelization": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_target_fps_parallelization",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:tidy_up": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_tidy_up",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    },
+    "finn:transpose_decomposition": {
+      "module": "finn.builder.build_dataflow_steps",
+      "attr": "step_transpose_decomposition",
+      "file_path": "/home/kirthanar/brainsmith/deps/finn/src/finn/builder/build_dataflow_steps.py"
+    }
+  }
+}
