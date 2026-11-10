@@ -1,0 +1,14 @@
+[2026-06-01 14:49:38,622] [finn.builder] INFO: Running step: qonnx_to_finn_step [1/23]
+[2026-06-01 14:49:38,731] [finn.builder] INFO: Running step: normalize_dataflow_layouts_step [2/23]
+[2026-06-01 14:49:38,735] [finn.builder] INFO: Running step: lenet_pre_dataflow_cleanup_step [3/23]
+[2026-06-01 14:49:38,817] [finn.builder] INFO: Running step: lenet_streamline_step [4/23]
+[2026-06-01 14:49:39,720] [finn.builder] INFO: Running step: lenet_clean_transposes_before_hw_step [5/23]
+[2026-06-01 14:49:40,470] [finn.builder] INFO: Running step: lenet_infer_hw_layers_step [6/23]
+[2026-06-01 14:49:40,560] [finn.builder] INFO: Running step: lenet_partition_sanity_check_step [7/23]
+[2026-06-01 14:49:40,598] [finn.builder] INFO: Running step: step_streamline [8/23]
+[2026-06-01 14:49:42,936] [finn.builder] INFO: Running step: step_transpose_decomposition [9/23]
+[2026-06-01 14:49:42,938] [finn.builder] INFO: Running step: build_dataflow_graph [10/23]
+[2026-06-01 14:49:43,053] [finn.builder] INFO: Running step: specialize_layers_step [11/23]
+[2026-06-01 14:49:43,076] [finn.builder] INFO: Running step: step_create_dataflow_partition [12/23]
+[2026-06-01 14:49:43,082] [finn.builder] ERROR: enable_build_pdb_debug not set in build config, exiting...
+[2026-06-01 14:49:43,083] [finn.builder] ERROR: Build failed

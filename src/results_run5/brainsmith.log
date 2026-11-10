@@ -1,0 +1,391 @@
+[2026-06-01 14:49:38] [brainsmith.dse.api] INFO: Exploring design space for dataflow accelerator:
+[2026-06-01 14:49:38] [brainsmith.dse.api] INFO:     Model: /home/kirthanar/brainsmith_projects/lenet/src/results_run5/lenet_clean.onnx
+[2026-06-01 14:49:38] [brainsmith.dse.api] INFO:     Blueprint: /home/kirthanar/brainsmith_projects/lenet/src/lenet.yaml
+[2026-06-01 14:49:38] [brainsmith.dse.api] INFO:     Output: /home/kirthanar/brainsmith_projects/lenet/src/results_run5
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:MVAU_hls → finn:MVAU_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:MVAU_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:MVAU_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:MVAU_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:MVAU_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:MVAU_rtl → finn:MVAU_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:MVAU_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:MVAU_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:MVAU_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:MVAU_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:Thresholding_hls → finn:Thresholding_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:Thresholding_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:Thresholding_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:Thresholding_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:Thresholding_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:Thresholding_rtl → finn:Thresholding_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:Thresholding_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:Thresholding_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:Thresholding_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:Thresholding_rtl
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: brainsmith:DuplicateStreams_hls → brainsmith:DuplicateStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:DuplicateStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: brainsmith:DuplicateStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: brainsmith:DuplicateStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:DuplicateStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: brainsmith:ElementwiseBinaryOp_hls → brainsmith:ElementwiseBinaryOp_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:ElementwiseBinaryOp_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: brainsmith:ElementwiseBinaryOp_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: brainsmith:ElementwiseBinaryOp_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:ElementwiseBinaryOp_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: brainsmith:LayerNorm_hls → brainsmith:LayerNorm_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:LayerNorm_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: brainsmith:LayerNorm_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: brainsmith:LayerNorm_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:LayerNorm_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: brainsmith:Softmax_hls → brainsmith:Softmax_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:Softmax_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: brainsmith:Softmax_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: brainsmith:Softmax_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:Softmax_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:AddStreams_hls → finn:AddStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:AddStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:AddStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:AddStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:AddStreams_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:Pool_hls → finn:Pool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:Pool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:Pool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:Pool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:Pool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:GlobalAccPool_hls → finn:GlobalAccPool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:GlobalAccPool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:GlobalAccPool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:GlobalAccPool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:GlobalAccPool_hls
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up backend: finn:LabelSelect_hls → finn:LabelSelect_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:LabelSelect_hls
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing backend registration: finn:LabelSelect_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered backend: finn:LabelSelect_hls
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:LabelSelect_hls
+[2026-06-01 14:49:38] [brainsmith.dse.api] DEBUG: Design space: 23 steps, 10 kernels
+[2026-06-01 14:49:38] [brainsmith.dse.api] DEBUG: DSE tree:
+[2026-06-01 14:49:38] [brainsmith.dse.api] DEBUG:   - Total paths: 1
+[2026-06-01 14:49:38] [brainsmith.dse.api] DEBUG:   - Total segments: 1
+[2026-06-01 14:49:38] [brainsmith.dse.api] DEBUG:   - Segment efficiency: 0.0%
+[2026-06-01 14:49:38] [brainsmith.dse.runner] DEBUG: Executing tree with fail_fast=False
+[2026-06-01 14:49:38] [brainsmith.dse.runner] DEBUG: Output directory: /home/kirthanar/brainsmith_projects/lenet/src/results_run5
+[2026-06-01 14:49:38] [brainsmith.dse.runner] DEBUG: Executing: root
+[2026-06-01 14:49:38] [brainsmith.dse.runner] DEBUG: Building segment: root
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: qonnx_to_finn → brainsmith:qonnx_to_finn
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:qonnx_to_finn
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:qonnx_to_finn
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:qonnx_to_finn
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:qonnx_to_finn
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: normalize_dataflow_layouts → brainsmith:normalize_dataflow_layouts
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:normalize_dataflow_layouts
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:normalize_dataflow_layouts
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:normalize_dataflow_layouts
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:normalize_dataflow_layouts
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: lenet_pre_dataflow_cleanup → custom:lenet_pre_dataflow_cleanup
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: lenet_streamline → custom:lenet_streamline
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: lenet_clean_transposes_before_hw → custom:lenet_clean_transposes_before_hw
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: lenet_infer_hw_layers → custom:lenet_infer_hw_layers
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: lenet_partition_sanity_check → custom:lenet_partition_sanity_check
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: streamline → finn:streamline
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:streamline
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:streamline
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:streamline
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:streamline
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: transpose_decomposition → finn:transpose_decomposition
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:transpose_decomposition
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:transpose_decomposition
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:transpose_decomposition
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:transpose_decomposition
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: build_dataflow_graph → brainsmith:build_dataflow_graph
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:build_dataflow_graph
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:build_dataflow_graph
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:build_dataflow_graph
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:build_dataflow_graph
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: specialize_layers → brainsmith:specialize_layers
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:specialize_layers
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:specialize_layers
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:specialize_layers
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:specialize_layers
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: create_dataflow_partition → finn:create_dataflow_partition
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:create_dataflow_partition
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:create_dataflow_partition
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:create_dataflow_partition
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:create_dataflow_partition
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: build_hw_graph → brainsmith:build_hw_graph
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:build_hw_graph
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:build_hw_graph
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:build_hw_graph
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:build_hw_graph
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: target_fps_parallelization → brainsmith:target_fps_parallelization
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:target_fps_parallelization
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:target_fps_parallelization
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:target_fps_parallelization
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:target_fps_parallelization
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: apply_parallelization_config → brainsmith:apply_parallelization_config
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:apply_parallelization_config
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: brainsmith:apply_parallelization_config
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: brainsmith:apply_parallelization_config
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:apply_parallelization_config
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: apply_folding_config → finn:apply_folding_config
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:apply_folding_config
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:apply_folding_config
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:apply_folding_config
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:apply_folding_config
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: minimize_bit_width → finn:minimize_bit_width
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:minimize_bit_width
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:minimize_bit_width
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:minimize_bit_width
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:minimize_bit_width
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: generate_estimate_reports → finn:generate_estimate_reports
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:generate_estimate_reports
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:generate_estimate_reports
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:generate_estimate_reports
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:generate_estimate_reports
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: hw_codegen → finn:hw_codegen
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:hw_codegen
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:hw_codegen
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:hw_codegen
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:hw_codegen
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: hw_ipgen → finn:hw_ipgen
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:hw_ipgen
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:hw_ipgen
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:hw_ipgen
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:hw_ipgen
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: set_fifo_depths → finn:set_fifo_depths
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:set_fifo_depths
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:set_fifo_depths
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:set_fifo_depths
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:set_fifo_depths
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: create_stitched_ip → finn:create_stitched_ip
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:create_stitched_ip
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:create_stitched_ip
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:create_stitched_ip
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:create_stitched_ip
+[2026-06-01 14:49:38] [brainsmith.registry._lookup] DEBUG: Looking up step: measure_rtlsim_performance → finn:measure_rtlsim_performance
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loading component: finn:measure_rtlsim_performance
+[2026-06-01 14:49:38] [brainsmith.registry._decorators] DEBUG: Updating existing step registration: finn:measure_rtlsim_performance
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Registered step: finn:measure_rtlsim_performance
+[2026-06-01 14:49:38] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:measure_rtlsim_performance
+[2026-06-01 14:49:38] [brainsmith._internal.finn.adapter] DEBUG: FINN build: input=/home/kirthanar/brainsmith_projects/lenet/src/results_run5/root/input.onnx, output=/home/kirthanar/brainsmith_projects/lenet/src/results_run5/root
+[2026-06-01 14:49:38] [brainsmith._internal.finn.adapter] DEBUG: Creating DataflowBuildConfig with: {'board': 'Pynq-Z1', 'synth_clk_period_ns': 20.0, 'kernel_selections': [('finn:MVAU', ['finn:MVAU_rtl', 'finn:MVAU_hls']), ('finn:Thresholding', ['finn:Thresholding_rtl', 'finn:Thresholding_hls']), ('brainsmith:DuplicateStreams', ['brainsmith:DuplicateStreams_hls']), ('brainsmith:ElementwiseBinaryOp', ['brainsmith:ElementwiseBinaryOp_hls']), ('brainsmith:LayerNorm', ['brainsmith:LayerNorm_hls']), ('brainsmith:Softmax', ['brainsmith:Softmax_hls']), ('finn:AddStreams', ['finn:AddStreams_hls']), ('finn:Pool', ['finn:Pool_hls']), ('finn:GlobalAccPool', ['finn:GlobalAccPool_hls']), ('finn:LabelSelect', ['finn:LabelSelect_hls'])], 'target_fps': 2, 'folding_config_file': '/home/kirthanar/brainsmith_projects/t5_small_project/src/folding_config_test2.json', 'fifosim_n_inferences': 2, 'verbose': False, 'auto_fifo_depths': False, 'split_large_fifos': False, 'output_dir': '.', 'generate_outputs': ['estimate_reports', 'rtlsim_performance', 'stitched_ip'], 'steps': [<function qonnx_to_finn_step at 0x7fef17d7a660>, <function normalize_dataflow_layouts_step at 0x7fef17db8ae0>, <function lenet_pre_dataflow_cleanup_step at 0x7fef17dba840>, <function lenet_streamline_step at 0x7fef17dba8e0>, <function lenet_clean_transposes_before_hw_step at 0x7fef17dba980>, <function lenet_infer_hw_layers_step at 0x7fef17dbaa20>, <function lenet_partition_sanity_check_step at 0x7fef17dbaac0>, <function step_streamline at 0x7fef06f49b20>, <function step_transpose_decomposition at 0x7fef06f49da0>, <function build_dataflow_graph at 0x7fef17d7a520>, <function specialize_layers_step at 0x7fef17d7ae80>, <function step_create_dataflow_partition at 0x7fef06f49c60>, <function build_hw_graph at 0x7fef17d7a340>, <function target_fps_parallelization_step at 0x7fef17db8c20>, <function apply_parallelization_config_step at 0x7fef17db8b80>, <function step_apply_folding_config at 0x7fef06f49ee0>, <function step_minimize_bit_width at 0x7fef06f4a020>, <function step_generate_estimate_reports at 0x7fef06f49f80>, <function step_hw_codegen at 0x7fef06f4a0c0>, <function step_hw_ipgen at 0x7fef06f4a160>, <function step_set_fifo_depths at 0x7fef06f4a200>, <function step_create_stitched_ip at 0x7fef06f4a340>, <function step_measure_rtlsim_performance at 0x7fef06f4a3e0>], 'save_intermediate_models': True, 'show_progress': False, 'enable_build_pdb_debug': False}
+[2026-06-01 14:49:38] [brainsmith._internal.finn.adapter] DEBUG: DataflowBuildConfig created:
+{'auto_fifo_depths': False,
+ 'auto_fifo_strategy': <AutoFIFOSizingMethod.LARGEFIFO_RTLSIM: 'largefifo_rtlsim'>,
+ 'board': 'Pynq-Z1',
+ 'cpp_driver_version': 'latest',
+ 'default_swg_exception': False,
+ 'enable_build_pdb_debug': False,
+ 'enable_hw_debug': False,
+ 'fifosim_input_throttle': True,
+ 'fifosim_n_inferences': 2,
+ 'fifosim_save_waveform': False,
+ 'folding_config_file': '/home/kirthanar/brainsmith_projects/t5_small_project/src/folding_config_test2.json',
+ 'folding_two_pass_relaxation': True,
+ 'fpga_part': None,
+ 'generate_outputs': ['estimate_reports', 'rtlsim_performance', 'stitched_ip'],
+ 'hls_clk_period_ns': None,
+ 'kernel_selections': [('finn:MVAU', ['finn:MVAU_rtl', 'finn:MVAU_hls']),
+                       ('finn:Thresholding',
+                        ['finn:Thresholding_rtl', 'finn:Thresholding_hls']),
+                       ('brainsmith:DuplicateStreams',
+                        ['brainsmith:DuplicateStreams_hls']),
+                       ('brainsmith:ElementwiseBinaryOp',
+                        ['brainsmith:ElementwiseBinaryOp_hls']),
+                       ('brainsmith:LayerNorm', ['brainsmith:LayerNorm_hls']),
+                       ('brainsmith:Softmax', ['brainsmith:Softmax_hls']),
+                       ('finn:AddStreams', ['finn:AddStreams_hls']),
+                       ('finn:Pool', ['finn:Pool_hls']),
+                       ('finn:GlobalAccPool', ['finn:GlobalAccPool_hls']),
+                       ('finn:LabelSelect', ['finn:LabelSelect_hls'])],
+ 'large_fifo_mem_style': <LargeFIFOMemStyle.AUTO: 'auto'>,
+ 'loop_body_hierarchy': None,
+ 'max_multithreshold_bit_width': 8,
+ 'minimize_bit_width': True,
+ 'mvau_wwidth_max': 36,
+ 'output_dir': '.',
+ 'preserve_thresh_shape': False,
+ 'rtlsim_batch_size': 1,
+ 'rtlsim_use_vivado_comps': True,
+ 'save_intermediate_models': True,
+ 'shell_flow_type': None,
+ 'show_progress': False,
+ 'signature': None,
+ 'specialize_layers_config_file': None,
+ 'split_large_fifos': False,
+ 'standalone_thresholds': False,
+ 'start_step': None,
+ 'steps': [<function qonnx_to_finn_step at 0x7fef17d7a660>,
+           <function normalize_dataflow_layouts_step at 0x7fef17db8ae0>,
+           <function lenet_pre_dataflow_cleanup_step at 0x7fef17dba840>,
+           <function lenet_streamline_step at 0x7fef17dba8e0>,
+           <function lenet_clean_transposes_before_hw_step at 0x7fef17dba980>,
+           <function lenet_infer_hw_layers_step at 0x7fef17dbaa20>,
+           <function lenet_partition_sanity_check_step at 0x7fef17dbaac0>,
+           <function step_streamline at 0x7fef06f49b20>,
+           <function step_transpose_decomposition at 0x7fef06f49da0>,
+           <function build_dataflow_graph at 0x7fef17d7a520>,
+           <function specialize_layers_step at 0x7fef17d7ae80>,
+           <function step_create_dataflow_partition at 0x7fef06f49c60>,
+           <function build_hw_graph at 0x7fef17d7a340>,
+           <function target_fps_parallelization_step at 0x7fef17db8c20>,
+           <function apply_parallelization_config_step at 0x7fef17db8b80>,
+           <function step_apply_folding_config at 0x7fef06f49ee0>,
+           <function step_minimize_bit_width at 0x7fef06f4a020>,
+           <function step_generate_estimate_reports at 0x7fef06f49f80>,
+           <function step_hw_codegen at 0x7fef06f4a0c0>,
+           <function step_hw_ipgen at 0x7fef06f4a160>,
+           <function step_set_fifo_depths at 0x7fef06f4a200>,
+           <function step_create_stitched_ip at 0x7fef06f4a340>,
+           <function step_measure_rtlsim_performance at 0x7fef06f4a3e0>],
+ 'stitched_ip_gen_dcp': False,
+ 'stop_step': None,
+ 'subprocess_console_levels': None,
+ 'subprocess_log_levels': None,
+ 'synth_clk_period_ns': 20.0,
+ 'target_fps': 2,
+ 'verbose': False,
+ 'verification_atol': 0.1,
+ 'verify_expected_output_npy': 'expected_output.npy',
+ 'verify_input_npy': 'input.npy',
+ 'verify_save_full_context': False,
+ 'verify_save_rtlsim_waveforms': False,
+ 'verify_steps': None,
+ 'vitis_floorplan_file': None,
+ 'vitis_opt_strategy': <VitisOptStrategyCfg.DEFAULT: 'default'>,
+ 'vitis_platform': None}
+[2026-06-01 14:49:38] [brainsmith._internal.finn.adapter] DEBUG: Executing FINN build with 23 steps
+[2026-06-01 14:49:38] [finn.builder] DEBUG: Building dataflow accelerator from /home/kirthanar/brainsmith_projects/lenet/src/results_run5/root/input.onnx
+[2026-06-01 14:49:38] [finn.builder] DEBUG: Intermediate outputs will be generated in /home/kirthanar/brainsmith_projects/lenet/build
+[2026-06-01 14:49:38] [finn.builder] DEBUG: Final outputs will be generated in .
+[2026-06-01 14:49:38] [finn.builder] DEBUG: Build log is at ./build_dataflow.log
+[2026-06-01 14:49:38] [brainsmith.steps.normalize_layouts] DEBUG: Normalizing dataflow layouts to NHWC (channel-last)
+[2026-06-01 14:49:38] [brainsmith.steps.normalize_layouts] DEBUG: Layout normalization complete
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG: Processing 10 kernel(s)...
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: finn:MVAU → finn:MVAU
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: finn:MVAU
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: finn:MVAU
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: finn:MVAU
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:MVAU
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   finn:MVAU (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: finn:Thresholding → finn:Thresholding
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: finn:Thresholding
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: finn:Thresholding
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: finn:Thresholding
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:Thresholding
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   finn:Thresholding (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: brainsmith:DuplicateStreams → brainsmith:DuplicateStreams
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:DuplicateStreams
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: brainsmith:DuplicateStreams
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: brainsmith:DuplicateStreams
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:DuplicateStreams
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   brainsmith:DuplicateStreams (infrastructure)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: brainsmith:ElementwiseBinaryOp → brainsmith:ElementwiseBinaryOp
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:ElementwiseBinaryOp
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: brainsmith:ElementwiseBinaryOp
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: brainsmith:ElementwiseBinaryOp
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:ElementwiseBinaryOp
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   brainsmith:ElementwiseBinaryOp (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: brainsmith:LayerNorm → brainsmith:LayerNorm
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:LayerNorm
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: brainsmith:LayerNorm
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: brainsmith:LayerNorm
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:LayerNorm
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   brainsmith:LayerNorm (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: brainsmith:Softmax → brainsmith:Softmax
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: brainsmith:Softmax
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: brainsmith:Softmax
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: brainsmith:Softmax
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: brainsmith:Softmax
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   brainsmith:Softmax (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: finn:AddStreams → finn:AddStreams
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: finn:AddStreams
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: finn:AddStreams
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: finn:AddStreams
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:AddStreams
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   finn:AddStreams (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: finn:Pool → finn:Pool
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: finn:Pool
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: finn:Pool
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: finn:Pool
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:Pool
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   finn:Pool (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: finn:GlobalAccPool → finn:GlobalAccPool
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: finn:GlobalAccPool
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: finn:GlobalAccPool
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: finn:GlobalAccPool
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:GlobalAccPool
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   finn:GlobalAccPool (computational)
+[2026-06-01 14:49:42] [brainsmith.registry._lookup] DEBUG: Looking up kernel: finn:LabelSelect → finn:LabelSelect
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loading component: finn:LabelSelect
+[2026-06-01 14:49:42] [brainsmith.registry._decorators] DEBUG: Updating existing kernel registration: finn:LabelSelect
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Registered kernel: finn:LabelSelect
+[2026-06-01 14:49:42] [brainsmith.registry._discovery] DEBUG: Loaded component: finn:LabelSelect
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG:   finn:LabelSelect (computational)
+[2026-06-01 14:49:42] [brainsmith.steps.build_dataflow_graph] DEBUG: Inserting 1 infrastructure kernel(s)...
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.insert_infrastructure_kernels] DEBUG: Inserting 1 infrastructure kernel(s)
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.insert_infrastructure_kernels] DEBUG: Running InsertDuplicateStreams for DuplicateStreams
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.insert_infrastructure_kernels] DEBUG:   - DuplicateStreams not needed (no insertion)
+[2026-06-01 14:49:43] [brainsmith.steps.build_dataflow_graph] DEBUG: Inferring 9 computational kernel(s)...
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring MVAU (legacy) via metadata lookup
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG:   Using transform: InferQuantizedMatrixVectorActivation
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring Thresholding (legacy) via metadata lookup
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG:   Using transform: InferThresholdingLayer
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring ElementwiseBinaryOp (KernelOp) via InferKernel
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring LayerNorm (KernelOp) via InferKernel
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring Softmax (KernelOp) via InferKernel
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring AddStreams (legacy) via metadata lookup
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG:   Using transform: InferAddStreamsLayer
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring Pool (legacy) via metadata lookup
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG:   Using transform: InferPool
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring GlobalAccPool (legacy) via metadata lookup
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG:   Using transform: InferGlobalAccPoolLayer
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG: Inferring LabelSelect (legacy) via metadata lookup
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.infer_kernels] DEBUG:   Using transform: InferLabelSelectLayer
+[2026-06-01 14:49:43] [brainsmith.steps.build_dataflow_graph] DEBUG: Assigned unique names to all nodes after dataflow graph construction
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selecting backend for Thresholding_0 (Thresholding), trying: ['finn:Thresholding_rtl', 'finn:Thresholding_hls']
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: RTL assumed viable for Thresholding_0 (Thresholding)
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selected backend finn:Thresholding_rtl (rtl) for Thresholding_0
+[2026-06-01 14:49:43] [brainsmith.registry._lookup] DEBUG: Derived domain 'finn.custom_op.fpgadataflow.rtl' for backend 'finn:Thresholding_rtl' from module 'finn.custom_op.fpgadataflow.rtl.thresholding_rtl'
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selecting backend for MVAU_0 (MVAU), trying: ['finn:MVAU_rtl', 'finn:MVAU_hls']
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: RTL constraint check for MVAU_0 (MVAU): False
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Backend finn:MVAU_rtl (rtl) not viable for MVAU_0
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selected backend finn:MVAU_hls (hls) for MVAU_0
+[2026-06-01 14:49:43] [brainsmith.registry._lookup] DEBUG: Derived domain 'finn.custom_op.fpgadataflow.hls' for backend 'finn:MVAU_hls' from module 'finn.custom_op.fpgadataflow.hls.matrixvectoractivation_hls'
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selecting backend for MVAU_1 (MVAU), trying: ['finn:MVAU_rtl', 'finn:MVAU_hls']
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: RTL constraint check for MVAU_1 (MVAU): False
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Backend finn:MVAU_rtl (rtl) not viable for MVAU_1
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selected backend finn:MVAU_hls (hls) for MVAU_1
+[2026-06-01 14:49:43] [brainsmith.registry._lookup] DEBUG: Derived domain 'finn.custom_op.fpgadataflow.hls' for backend 'finn:MVAU_hls' from module 'finn.custom_op.fpgadataflow.hls.matrixvectoractivation_hls'
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selecting backend for MVAU_2 (MVAU), trying: ['finn:MVAU_rtl', 'finn:MVAU_hls']
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: RTL constraint check for MVAU_2 (MVAU): False
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Backend finn:MVAU_rtl (rtl) not viable for MVAU_2
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selected backend finn:MVAU_hls (hls) for MVAU_2
+[2026-06-01 14:49:43] [brainsmith.registry._lookup] DEBUG: Derived domain 'finn.custom_op.fpgadataflow.hls' for backend 'finn:MVAU_hls' from module 'finn.custom_op.fpgadataflow.hls.matrixvectoractivation_hls'
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selecting backend for MVAU_3 (MVAU), trying: ['finn:MVAU_rtl', 'finn:MVAU_hls']
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: RTL constraint check for MVAU_3 (MVAU): False
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Backend finn:MVAU_rtl (rtl) not viable for MVAU_3
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selected backend finn:MVAU_hls (hls) for MVAU_3
+[2026-06-01 14:49:43] [brainsmith.registry._lookup] DEBUG: Derived domain 'finn.custom_op.fpgadataflow.hls' for backend 'finn:MVAU_hls' from module 'finn.custom_op.fpgadataflow.hls.matrixvectoractivation_hls'
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selecting backend for MVAU_4 (MVAU), trying: ['finn:MVAU_rtl', 'finn:MVAU_hls']
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: RTL constraint check for MVAU_4 (MVAU): True
+[2026-06-01 14:49:43] [brainsmith.primitives.transforms.specialize_kernels] DEBUG: Selected backend finn:MVAU_rtl (rtl) for MVAU_4
+[2026-06-01 14:49:43] [brainsmith.registry._lookup] DEBUG: Derived domain 'finn.custom_op.fpgadataflow.rtl' for backend 'finn:MVAU_rtl' from module 'finn.custom_op.fpgadataflow.rtl.matrixvectoractivation_rtl'
+[2026-06-01 14:49:43] [brainsmith._internal.finn.adapter] DEBUG: FINN exit code: -1
+[2026-06-01 14:49:43] [brainsmith.dse.runner] ERROR: Segment failed: root: Segment 'root' failed: FINN build failed with exit code -1
+[2026-06-01 14:49:43] [brainsmith.dse.runner] ERROR: Unexpected error details:
+Traceback (most recent call last):
+  File "/home/kirthanar/brainsmith/brainsmith/dse/runner.py", line 258, in run_segment
+    final_model = self.finn_adapter.build(segment_input, finn_config, segment_dir)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirthanar/brainsmith/brainsmith/_internal/finn/adapter.py", line 136, in build
+    raise RuntimeError(f"FINN build failed with exit code {exit_code}")
+RuntimeError: FINN build failed with exit code -1
+[2026-06-01 14:49:43] [brainsmith.dse.runner] ERROR: Segment failed: root: Segment 'root' failed: FINN build failed with exit code -1
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO: ==================================================
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO: Execution Complete in 4.7s
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO:   Total:      1
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO:   Successful: 0
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO:   Failed:     1
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO:   Skipped:    0
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO:   Cached:     0
+[2026-06-01 14:49:43] [brainsmith.dse.runner] INFO: ==================================================
