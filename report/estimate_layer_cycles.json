@@ -1,0 +1,12 @@
+{
+  "Thresholding_rtl_0": 784,
+  "FMPadding_rtl_0": 1024,
+  "ConvolutionInputGenerator_rtl_0": 5033,
+  "MVAU_hls_0": 29400,
+  "ConvolutionInputGenerator_rtl_1": 4116,
+  "MVAU_hls_1": 60000,
+  "ConvolutionInputGenerator_rtl_2": 800,
+  "MVAU_hls_2": 48000,
+  "MVAU_hls_3": 10080,
+  "MVAU_rtl_0": 840
+}
